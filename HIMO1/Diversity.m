@@ -7,7 +7,7 @@ for time =0:Trials-1
    aa1=sum(NS1(1:((time-1)+1)))+1;
    bb1=aa1+NS1(time+1)-1;
    pa1=pare1(aa1:bb1,:);
-   Frontshow(pa1);
+   Frontshowfortest(pa1);
    [row,col]=size(pa1);
    if row>1
    for i=1:row

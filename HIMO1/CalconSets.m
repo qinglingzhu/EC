@@ -13,10 +13,8 @@ CT1=[];CT2=[];
 for time =0:min(Trials1,Trials2)-1%为了能运行..我改了
 %for time =1:min(Trials1,Trials2)    这是原来的
    pa1=[];pa2=[];
-   %NS存储每次运行所得到的最优端面的个体数，则aa1->aa2是第time次运行结果区间，bb1和bb2同理
    aa1=sum(NS1(1:((time-1)+1)))+1;bb1=aa1+NS1(time+1)-1;
    aa2=sum(NS2(1:((time-1)+1)))+1;bb2=aa2+NS2(time+1)-1;
-   %第time次运行得到的pareto端面
    pa1=pare1(aa1:bb1,:);
    pa2=pare2(aa2:bb2,:);
    a=[];
